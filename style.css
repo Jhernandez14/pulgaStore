@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+#negocio,
+#contacto {
+  background-color: rgb(59, 128, 160);
+}
+
+
+#navbarNav a:hover{
+    background-color: black;
+    color: brown;
+}
+
+
+.mapa-responsive iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+
+.galeria-img {
+  width: 300px;
+  height: 300px;
+  object-fit:fill; 
+  border-radius: 10px;
+}
+
+
+section a {
+  color: black;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+#footer {
+  width: 100%;
+  position: relative;
+}
+
+
+
+.bloque {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.rojo { background-color: red; }
+.azul { background-color: blue; }
+.verde { background-color: limegreen; }

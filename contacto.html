@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pulga Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="contacto">
+
+    <div class="wrapper">
+        <header class="bg-dark text-white text-center text-decoration-none py-4">
+            <h1>Contacto</h1>
+            <a class="navbar-brand position-absolute start-50 translate-middle-x text-white fs-8" href="#">
+                Por favor completa el siguiente formulario para ponerte en contacto con nosotros.
+            </a>
+        </header>
+
+        <main class="container my-5">
+            <section class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="p-4 border rounded shadow-sm bg-light">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div class="text-center text-white bg-dark py-2" id="fecha-hora"></div>
+    <footer id="footer" class="bg-dark text-white py-3">
+        <div class="text-center">
+            <p>Javiera Hernandez | 2025</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

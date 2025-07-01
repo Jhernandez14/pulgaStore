@@ -2,140 +2,128 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Javiera Hernandez">
-    <title>Pulga Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Javiera Hernandez Guzman" />
+  <title>Pulga Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 </head>
 
-
 <body id="negocio">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid position-relative">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid position-relative">
+      <!-- Título centrado -->
+      <a class="navbar-brand position-absolute start-50 translate-middle-x text-white fs-3" href="#">
+        Bienvenido a Pulga Store
+      </a>
 
-            <!-- Título centrado absolutamente -->
-            <a class="navbar-brand position-absolute start-50 translate-middle-x text-white fs-3" href="#">
-                Bienvenido a Pulga Store
-            </a>
+      <!-- Menú hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <!-- Botón hamburguesa (responsive) -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <!-- Menú izquierdo -->
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <!-- Menú alineado a la izquierda -->
-            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+  <!-- Contenido principal -->
+  <main class="container my-4">
+    <!-- Historia -->
+    <section id="nosotros" class="mb-4">
+      <h2>Historia del Negocio</h2>
+      <p>
+        Fundado en el año 2014 por Javiera Hernandez y Marcelo Silva, nuestro negocio comenzó como una pequeña tienda familiar con el objetivo de entregar artículos para comenzar a iniciarte en el mar.
+      </p>
+      <img src="https://media.istockphoto.com/id/913987778/es/v%C3%ADdeo/hombre-y-mujer-que-corre-en-una-playa-con-tablas-de-surf-en-sus-manos-al-atardecer.jpg?s=640x640&k=20&c=RuvcAvjbH5SCfE2gC9EWyKxtqwww7oelQ07XZpZP0EE=" class="img-fluid" alt="Historia del negocio" />
 
-        </div>
-    </nav>
+      <!-- Botón video -->
+      <div class="my-3">
+        <a data-fancybox href="https://youtu.be/gKxTVj4H5qw?si=Mre6y_tSFIG02A_1">
+          <button class="btn btn-primary">Ver video</button>
+        </a>
+      </div>
+    </section>
 
+    <!-- Ubicación -->
+    <section id="ubicacion" class="mb-4">
+      <h2>Ubicación y Sucursales</h2>
+      <p>Actualmente contamos con sucursales en:</p>
+      <ol class="d-inline-block text-start">
+        <li>Santiago</li>
+        <li>Valparaíso</li>
+      </ol>
+      <p>Oficina central: Av. Providencia #1760, Santiago.</p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXiTdVI9_HUKfS2KyIhTF2Jmv_Bl0GEZE4A&s" alt="Ubicación" class="img-fluid rounded my-3" style="max-width: 400px;" />
 
-    <main class="container my-4">
-        <section id="nosotros" class="mb-4">
-            <h2>Historia del Negocio</h2>
-            <p>Fundado en el año 2014 por Javiera Hernandez y Marcelo Silva, nuestro negocio comenzó como una pequeña
-                tienda familiar con el objetivo de entregar articulos para comenzar a iniciarte en el mar</p>
-            <img src="https://media.istockphoto.com/id/913987778/es/v%C3%ADdeo/hombre-y-mujer-que-corre-en-una-playa-con-tablas-de-surf-en-sus-manos-al-atardecer.jpg?s=640x640&k=20&c=RuvcAvjbH5SCfE2gC9EWyKxtqwww7oelQ07XZpZP0EE="
-                alt="Historia del negocio" class="img-fluid">
+      <!-- Botón mapa -->
+      <div class="text-start">
+        <a data-fancybox data-type="iframe" href="https://www.google.com/maps/embed?pb=!1m18...">
+          <button class="btn btn-success">Ver mapa</button>
+        </a>
+      </div>
+    </section>
 
-            <!--Boton video-->
-            <div class="my-3">
-                <a data-fancybox href="https://youtu.be/gKxTVj4H5qw?si=Mre6y_tSFIG02A_1">
-                    <button class="btn btn-primary">Ver video</button>
-                </a>
-            </div>
-        </section>
+    <!-- Productos -->
+    <section id="servicios" class="mb-4">
+      <h2>Productos</h2>
+      <ul>
+        <li>Tablas de surf</li>
+        <li>Trajes de agua</li>
+        <li>Accesorios playeros</li>
+      </ul>
+      <img src="https://images.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg?cs=srgb&dl=pexels-pixabay-390051.jpg&fm=jpg" class="img-fluid" alt="Productos" />
+    </section>
 
-        <section id="ubicacion" class="mb-4">
-            <h2>Ubicación y Sucursales</h2>
-            <p>Actualmente contamos con sucursales en:</p>
-            <ol class="d-inline-block text-start">
-                <li>Santiago</li>
-                <li>Valparaíso</li>
-            </ol>
-            <p>Nuestra oficina central se encuentra en Av. Providencia #1760, Santiago.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStXiTdVI9_HUKfS2KyIhTF2Jmv_Bl0GEZE4A&s"
-                alt="Ubicación de sucursales" class="img-fluid rounded my-3" style="max-width: 400px;">
+    <!-- Galería -->
+    <section>
+      <h2 class="text-center my-4">Galería</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a data-fancybox="galeria" href="assets/img/short1.jpg">
+          <img src="assets/img/short1.jpg" class="galeria-img img-fluid" alt="Imagen 1" />
+        </a>
+        <a data-fancybox="galeria" href="assets/img/surfnina1.jpg">
+          <img src="assets/img/surfnina1.jpg" class="galeria-img img-fluid" alt="Imagen 2" />
+        </a>
+        <a data-fancybox="galeria" href="assets/img/tablabody1.jpg">
+          <img src="assets/img/tablabody1.jpg" class="galeria-img img-fluid" alt="Imagen 3" />
+        </a>
+      </div>
+    </section>
 
-            <!-- Boton mapa -->
-            <div class="text-start">
-                <a data-fancybox data-type="iframe"
-                    href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.838354920362!2d-70.62036638479503!3d-33.426927880778936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf606f82be6d%3A0x87218079aa94d5a2!2sAv.%20Providencia%201760%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1718880000000!5m2!1ses-419!2scl">
-                    <button class="btn btn-success">Ver mapa</button>
-                </a>
-            </div>
-        </section>
+    <!-- Referencias -->
+    <section class="mt-4">
+      <h2 class="mb-2">Referencias</h2>
+      <ul class="list-unstyled navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://mauiandsons.cl/" target="_blank">Maui and Sons</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.oneill.cl/" target="_blank">Oneill</a></li>
+      </ul>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-3">
+    <div class="text-center text-white bg-dark py-2" id="fecha-hora"></div>
+    <div class="text-center">
+      <p>Javiera Hernandez | 2025</p>
+    </div>
+  </footer>
 
-        <section id="servicios" class="mb-4">
-            <h2>Producto</h2>
-            <p>Ofrecemos:</p>
-            <ul>
-                <li>Tablas de surf</li>
-                <li>Trajes de agua</li>
-                <li>Accesorios playeros</li>
-            </ul>
-            <img src="https://images.pexels.com/photos/390051/surfer-wave-sunset-the-indian-ocean-390051.jpeg?cs=srgb&dl=pexels-pixabay-390051.jpg&fm=jpg"
-                alt="Productos electrónicos" class="img-fluid">
-        </section>
-
-        <!--Seccion de imagenes-->
-        <section>
-            <h2 class="text-center my-4">Galería</h2>
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a data-fancybox="galeria" href="assets/img/short1.jpg">
-                    <img src="assets/img/short1.jpg" class="galeria-img img-fluid" alt="Imagen 1">
-                </a>
-                <a data-fancybox="galeria" href="assets/img/surfnina1.jpg">
-                    <img src="assets/img/surfnina1.jpg" class="galeria-img img-fluid" alt="Imagen 2">
-                </a>
-                <a data-fancybox="galeria" href="assets/img/tablabody1.jpg">
-                    <img src="assets/img/tablabody1.jpg" class="galeria-img img-fluid" alt="Imagen 3">
-                </a>
-            </div>
-        </section>
-
-
-        <section>
-            <div class="col-12 col-md-6">
-                <h2 class="mb-2">Referencias</h2>
-                <ul class="list-unstyled mb-2 navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="https://mauiandsons.cl/"
-                            class="text-decoration-none text-primary" target="_blank">Maui
-                            and Sons</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.oneill.cl/"
-                            class="text-decoration-none text-primary" target="_blank">Oneill</a></li>
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer bg-dark text-white py-3">
-        <div class="text-center text-white bg-dark py-2" id="fecha-hora"></div>
-        <div class="col-12 col-md-6 text-md-end ">
-            <p>Javiera Hernandez | 2025</p>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Fancybox -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-
+  <!-- JS -->
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

@@ -51,6 +51,30 @@ section a:hover {
   position: relative;
 }
 
+.modo-oscuro {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.modo-oscuro .navbar,
+.modo-oscuro footer,
+.modo-oscuro #fecha-hora {
+  background-color: #1f1f1f !important;
+}
+
+.modo-oscuro input,
+.modo-oscuro textarea {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+
+.modo-oscuro .form-label {
+  color: #ccc;
+}
+
+
+
 
 
 .bloque {

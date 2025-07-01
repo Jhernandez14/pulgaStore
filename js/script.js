@@ -24,3 +24,21 @@ mostrarFechaHora();
 
 // Actualizar cada segundo
 setInterval(mostrarFechaHora, 1000);
+
+
+document.getElementById("formulario-contacto").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+
+  const nombre = document.getElementById("nombre").value.trim();
+
+    alert("¡Gracias por tu mensaje, " + nombre + "! lo tendremos en cuenta");
+    this.reset();
+  }
+);
+
+
+
+document.getElementById("modo-tema").addEventListener("click", function () {
+  document.body.classList.toggle("modo-oscuro");
+});
+
